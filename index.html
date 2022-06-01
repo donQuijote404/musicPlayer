@@ -1,46 +1,59 @@
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Music player</title>
-<div class="player">
-    <!-- Dashboard -->
-    <div class="dashboard">
-        <!-- Header -->
-        <header>
-            <h4>Now playing:</h4>
-            <h2>String 57th & 9th</h2>
-        </header>
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music player</title>
+    <link rel="stylesheet" href="/asset/font/css/all.css">
+    <link rel="stylesheet" href="/asset/css/style.css">
+</head>
 
-        <!-- CD -->
-        <div class="cd">
-            <div class="cd-thumb">
+<body>
+    <div class="player">
+        <!-- Dashboard -->
+        <div class="dashboard">
+            <!-- Header -->
+            <header>
+                <h4>Now playing:</h4>
+                <h2>String 57th & 9th</h2>
+            </header>
+
+            <!-- CD -->
+            <div class="cd">
+                <div class="cd-thumb">
+                </div>
             </div>
+
+            <!-- Control -->
+            <div class="control">
+                <div class="btn btn-repeat">
+                    <i class="fa-solid fa-repeat"></i>
+                </div>
+                <div class="btn backward">
+                    <i class="fa-solid fa-backward-step"></i>
+                </div>
+                <div class="btn btn-toggle-play">
+                    <i class="fa-solid fa-pause icon-pause"></i>
+                    <i class="fa-solid fa-play icon-play"></i>
+                </div>
+                <div class="btn forward">
+                    <i class="fa-solid fa-forward-step"></i>
+                </div>
+                <div class="btn btn-random">
+                    <i class="fa-solid fa-shuffle"></i>
+                </div>
+            </div>
+
+            <input id="progress" class="progress" type="range" value="0" step="1" min="0" max="100">
+
+            <audio id="audio" src=""></audio>
         </div>
 
-        <!-- Control -->
-        <div class="control">
-            <div class="btn btn-repeat">
-                <i class="fa-solid fa-repeat"></i>
-            </div>
-            <div class="btn btn-prev">
-                <i class="fa-solid fa-backward-step"></i>
-            </div>
-            <div class="btn btn-toggle-play">
-                <i class="fa-solid fa-pause icon-pause"></i>
-                <i class="fa-solid fa-play icon-play"></i>
-            </div>
-            <div class="btn btn-next">
-                <i class="fa-solid fa-forward-step"></i>
-            </div>
-            <div class="btn btn-random">
-                <i class="fa-solid fa-shuffle"></i>
-            </div>
+        <!-- Playlist -->
+        <div class="playlist">
         </div>
-
-        <input id="progress" class="progress" type="range" value="0" step="1" min="0" max="100">
-
-        <audio id="audio" src=""></audio>
     </div>
-
-    <!-- Playlist -->
-    <div class="playlist">
-    </div>
-</div>
+    <script src="/asset/js/style.js"></script>
+</body>
+</html>
