@@ -96,6 +96,10 @@ header h2 {
     color: var(--primary-color);
 }
 
+.active {
+    color: var(--primary-color);
+}
+
 .control .btn-toggle-play {
     width: 56px;
     height: 56px;
